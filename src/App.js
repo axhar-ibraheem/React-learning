@@ -1,8 +1,9 @@
-import "./components/ExpenseItem";
+import "./components/Expenses/ExpenseItem";
 import "./App.css";
-import ExpenseItem from "./components/ExpenseItem";
+import Expenses from "./components/Expenses/Expenses";
+import React from "react";
 
-function App() {
+const App = () => {
   const expenses = [
     {
       id: "e1",
@@ -33,19 +34,20 @@ function App() {
       location: "Banglore",
     },
   ];
+
+  // return React.createElement(
+  //   "div",
+  //   { className: "class" },
+  //   React.createElement("h1", {}, "lets get started"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
   return (
-    <div className="class">
+    <div>
       <h1>lets get started</h1>
-      {expenses.map((expense) => (
-        <ExpenseItem
-          title={expense.title}
-          amount={expense.amount}
-          date={expense.date}
-          location={expense.location}
-        ></ExpenseItem>
-      ))}
+      <Expenses items={expenses} />
     </div>
   );
-}
+};
 
 export default App;
