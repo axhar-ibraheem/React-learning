@@ -35,13 +35,6 @@ const App = () => {
     },
   ];
 
-  // return React.createElement(
-  //   "div",
-  //   { className: "class" },
-  //   React.createElement("h1", {}, "lets get started"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
-
   return (
     <div>
       <h1>lets get started</h1>
@@ -49,5 +42,10 @@ const App = () => {
     </div>
   );
 };
-
+// return React.createElement(
+//   "div",
+//   { className: "class" },
+//   React.createElement("h1", {}, "lets get started"),
+//   React.createElement(Expenses, { items: expenses })
+// );
 export default App;
