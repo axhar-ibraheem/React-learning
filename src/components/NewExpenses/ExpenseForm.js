@@ -30,7 +30,7 @@ const ExpenseForm = (props) => {
   };
 
   return (
-    <form onSubmit={submitHandler}>
+    <form onSubmit={submitHandler} autoComplete="on">
       <div className="new-expense__controls">
         <div className="new-expense__control">
           <label>Title</label>
